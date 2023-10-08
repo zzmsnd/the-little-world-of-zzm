@@ -1,1 +1,249 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一些小美好</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+        function mouseover(){
+            // document.write("<marquee direction=' "+"left' "+" behavior=' "+"scroll' "+"loop=' "+"infinite' "+"align=' "+"middle' "+
+            // "bgcolor=' "+"pink' "+"width=' "+"150 '"+"height= '"+"30'>"+"点击图片 查看图片背后的故事噢~"+" </marquee>");
+            var danmu=document.getElementById("danmu");
+            danmu.innerHTML="点击图片,查看图片背后的故事噢"
+        }
+        function  mouseout(){
+            var danmu=document.getElementById("danmu");
+            danmu.innerHTML=" ";
+        }
+    </script>
+    <style>
+        #div2 {
+            /* background-image: url(w3.jpeg); */
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            /* background-color: #fff; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+        #photo_box{
+            width: 280px;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: 200px auto;
+            transform-style: preserve-3d;/*表示所有子元素在3D空间中呈现*/
+            transform: rotateX(-5deg) rotateY(0deg);
+            animation: run 30s linear infinite;/*循环执行run动画，每30秒执行一次*/
+        }
+        /*设置图像大小、边框、圆角、位置*/
+        #photo_box img{
+            width: 200px;
+            height: 300px;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        /*依次设置图像盒子中每个图像旋转后位置*/
+        #photo_box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(2){
+            transform: rotateY(36deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(3){
+            transform: rotateY(72deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(4){
+            transform: rotateY(108deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(5){
+            transform: rotateY(144deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(6){
+            transform: rotateY(180deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(7){
+            transform: rotateY(216deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(8){
+            transform: rotateY(252deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(9){
+            transform: rotateY(288deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(10){
+            transform: rotateY(324deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(11){
+            transform: rotateY(360deg) translateZ(500px);
+        }
+            /*采用@keyframes 规则创建run动画。*/
+        @keyframes run {
+            0%{transform: rotateX(0deg) rotateY(0deg);
+            }
+            25%{transform: rotateX(10deg) rotateY(90deg);
+            }
+            50%{transform: rotateX(0deg) rotateY(180deg);
+            }
+            75%{transform: rotateX(-10deg) rotateY(270deg);
+            }
+            100%{transform: rotateX(0deg) rotateY(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body style="background-image: url(图片/背景图.jpg); background-repeat:no-repeat;">
+    <video src="images/背景1.mp4" class="bjimg" autoplay loop muted></video> 
+    <nav id="nav" class="nav-wrap">
+        <ul class="clearfix">
+            <li >
+                <a href="page1.html">
+                    学习与思考
+                </a>
+            </li>
+    
+            <li >
+                <a href="page2.html">
+                    碎碎念
+                </a>
+            </li>
+    
+            <li style="background:#6e938f;">
+                <a href="page3.html">
+                    一些小美好
+                </a>
+            </li>
+    
+            <li >
+                <a href="page4.html">
+                    美食分享
+                </a>
+            </li>
+            <li>
+                <a href="page5.html">
+                    嘿！
+                </a>
+            </li>
+    
+            <li id="navEnd">
+                <a href="page6.html">
+                    喜欢的音乐
+                </a>
+            </li>
+            
+            <li id="navEnd" >
+                <a href="page7.html">
+                    留言板
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <section class="container-content">
+        <!-- <div ><marquee id="danmu" direction='left' behavior='scroll' loop='infinite'    align='middle' bgcolor='pink' width='600' height='30'></marquee></div>
+        <div style="float: left;">
+        <table border="0" width="100%" height="100%" cellspacing="0" cellpadding="0" >
+            <tr>
+                <th width="200" ><a href="天空.html"><img src="images/天空.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th width="200"></th>
+                <th width="200"></th>
+                <th width="200"></th>
+                <th width="200"><a href="彩霞.html"><img src="images/彩霞.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th width="800">翻了翻相册 其实存了很多很多张照片<br><br>可能是某个瞬间抬头看到天空很美丽时拍下的 </th>
+            </tr>
+            <tr>
+                <th width="100"></th>
+                <th width="200"><a href="雪景.html"><img src="images/雪景.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th width="200"></th>
+                <th width="200"><a href="树荫.html"><img src="images/树荫.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th width="200"></th>
+                <th width="800"><br><br>可能是突然觉得眼前景色很触动人心时拍下的<br><br>也有些单纯是觉得很有趣</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th><a href="金叶.html"><img src="images/金叶.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th></th>
+                <th></th>
+                <th width="800"><br><br>拍下留做纪念<br><br>嘿!</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><a href="冬天的冰棍.html"><img src="images/冬天的冰棍.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th></th>
+                <th><a href="小梦的饺子.html"><img src="images/小梦的饺子.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th></th>
+                <th width="800"><br><br>总之这些都是<br><br>留在记忆中的小美好啦~</th>
+            </tr>
+            <tr>
+                <th><a href="途中景色.html"><img src="images/途中景色.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th><a href="粉色天空.html"><img src="images/粉色天空.jpg" width="100%" height="100%" onmouseover="mouseover()" onmouseout="mouseout()"/></a></th>
+            </tr>
+        </table>
+        
+    </div> --> 
+    
+        <marquee id="danmu" direction='left' behavior='scroll' loop='infinite' 
+        align='middle' bgcolor='pink' width='600' height='30'></marquee></div>
+        <div id="photo_box">
+            <img src="images/粉色天空.jpg">
+            <img src="images/天空.jpg">
+            <img src="images/冬天的冰棍.jpg">
+            <img src="images/彩霞.jpg">
+            <img src="images/途中景色.jpg">
+            <img src="images/金叶.jpg">
+            <img src="images/粉色天空.jpg">
+            <img src="images/天空.jpg">
+            <img src="images/树荫.jpg">
+            <img src="images/雪景.jpg">
+            <a href="天空.html"><img src="images/滑动中心.jpg" onmouseover="mouseover()" onmouseout="mouseout()"></a> 
+        </div>
+
+    <!-- </div>  -->
+    
+    
+    </section>
+    
+</body>
+<script>
+
+    var name=localStorage.getItem("username");
+
+    var div1=document.getElementById("text1");
+
+    div1.innerHTML="欢迎"+name+"登录！";
+
+    function outclick() {
+
+        localStorage.clear();
+
+        window.location.href="登录页面.html";
+
+    }
+
+</script>
+
+</html>
