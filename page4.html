@@ -1,1 +1,253 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食分享</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+        function mouseout(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML=""
+
+        }
+        function mouseover1(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML="烤的滋滋响的烤肉，混着油烟的香气，外焦里嫩，撒上辣椒粉后，放进嘴里品尝，真是太美味啦！"
+        }
+        function mouseover2(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML="降温啦，冬天不仅要吃烤红薯和板栗，还要来一碗热气腾腾的麻辣烫！吃完之后整个人都暖洋洋的~"
+        }
+        function mouseover3(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML="馄饨真是太好吃啦~简单的肉馅，就是鲜美和香浓的结合，一口一个很满足！"
+        }
+        function mouseover4(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML="这个豚骨面，它的汤真的好浓郁，于是面也很入味，所以每次吃完面之后又会喝很多汤，对了，它家的地狱拉面也很不错！"
+        }
+        function mouseover5(){
+            var describe=document.getElementById("describe");
+            describe.innerHTML="花道寿司！那天和室友们等了好久才到我们，其实嘛，寿司一般般，但是这个蟹排不错！"
+        }
+        
+    </script>
+</head>
+<body style="background-image: url(图片/美食分享背景1.jpg); background-repeat:no-repeat;background-size: 100% 100%;">
+    
+
+    <nav id="nav" class="nav-wrap">
+        <ul class="clearfix">
+            <li >
+                <a href="page1.html">
+                    学习与思考
+                </a>
+            </li>
+    
+            <li >
+                <a href="page2.html">
+                    碎碎念
+                </a>
+            </li>
+    
+            <li>
+                <a href="page3.html">
+                    一些小美好
+                </a>
+            </li>
+    
+            <li style="background:#6e938f;">
+                <a href="page4.html">
+                    美食分享
+                </a>
+            </li>
+            <li>
+                <a href="page5.html">
+                    嘿！
+                </a>
+            </li>
+    
+            <li id="navEnd">
+                <a href="page6.html">
+                    喜欢的音乐
+                </a>
+            </li>
+            
+            <li id="navEnd" >
+                <a href="page7.html">
+                    留言板
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <section class="container-content">
+        <menu>
+            <ul>
+            <li><a href="#管饱系列">管饱系列</a></li>
+            <li><a href="#饭后小零食">饭后小零食</a></li>
+            <li><a href="#炸炸炸">炸炸炸</a></li>
+            <li><a href="#生日蛋糕">生日蛋糕</a></li>
+            <li><a href="#来点喝的！">来点喝的！</a></li>
+            
+            </ul>
+            </menu>
+        <div id="butong_net_left" style="overflow:hidden;width:1000px;">
+            <table cellpadding="0" cellspacing="0" border="0">
+            <tr><td id="butong_net_left1" valign="top" align="center">
+            <table cellpadding="2" cellspacing="0" border="0">
+            <tr align="center">
+            <td><img src="images/烤肉.jpg" width="300" height="300" onmouseover="mouseover1()" onmouseout="mouseout()"></td>
+            <td><img src="images/麻辣烫.jpg" width="300" height="300" onmouseover="mouseover2()" onmouseout="mouseout()"></td>
+            <td><img src="images/馄饨.jpg" width="300" height="300" onmouseover="mouseover3()" onmouseout="mouseout()"></td>
+            <td><img src="images/豚骨面.jpg" width="300" height="300" onmouseover="mouseover4()" onmouseout="mouseout()"></td>
+            <td><img src="images/花道寿司.jpg" width="300" height="300" onmouseover="mouseover5()" onmouseout="mouseout()"></td>
+            </tr>
+            </table>
+            </td>
+            <td id="butong_net_left2" valign="top"></td>
+            </tr>
+            </table>
+            </div>
+            <script>
+            var speed=10//速度数值越大速度越慢
+            butong_net_left2.innerHTML=butong_net_left1.innerHTML;
+             function Marquee3(){
+            if(butong_net_left2.offsetWidth-butong_net_left.scrollLeft<=0)
+            butong_net_left.scrollLeft-=butong_net_left1.offsetWidth;
+            else{
+            butong_net_left.scrollLeft++;
+            }
+            }
+            var MyMar3=setInterval(Marquee3,speed);
+            butong_net_left.οnmοuseοver=function() {clearInterval(MyMar3);}
+            butong_net_left.οnmοuseοut=function() {MyMar3=setInterval(Marquee3,speed);}
+            </script>
+            <font id="describe" face="黑体" size="3" color="red"></font>
+            <br>
+            虽然虽然，一直在念叨减肥 但是！吃饱了这顿再说嘛！于是一直都没有行动起来，这个界面的本意是，希望以后自己哪天没有胃口了看一看 
+            <br>
+            <br>
+            于是吃饭可以更香！因为有一天哥哥跟我说没有什么胃口，然后我就给他发了很多美食的照片，嗯...效果还不错!
+            <br>
+            <br>
+            所以自己每次吃到好吃的都拍张照，还是有点用处的嘛！
+        </div>
+        <br>
+            <br>
+        <div class="topic1">
+         <h1 id="管饱系列">管饱系列</h1>
+        <ul>
+        <li>
+        <a href="#"><img src="images/烤肉.jpg"/></a>
+        <span>烤肉</span>
+        
+        </li>
+        <li>
+        <a href="#"><img src="images/豚骨面.jpg"/></a>
+        <span>豚骨面</span>
+        
+        </li>
+        <li>
+        <a href="#"><img src="images/麻辣烫.jpg"/></a>
+        <span>麻辣烫</span>
+        </li>
+        <li>
+        <a href="#"><img src="images/花雕醉鸡.jpg"/></a>
+        <span>花雕醉鸡</span>
+        </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="topic1">
+        <h1 id="饭后小零食">饭后小零食</h1>
+    <ul>
+    <li>
+    <a href="#"><img src="images/提拉米苏.jpg"/></a>
+    <span>提拉米苏</span>
+    
+    </li>
+    <li>
+    <a href="#"><img src="images/梅花糕.jpg"/></a>
+    <span>梅花糕</span>
+    
+    </li>
+    <li>
+    <a href="#"><img src="images/纸杯蛋糕.jpg"/></a>
+    <span>纸杯蛋糕</span>
+    
+    <li>
+    <a href="#"><img src="images/汤包.jpg"/></a>
+    <span>汤包</span>
+    
+    </ul>
+</div>
+<br><br>
+<div class="topic1">
+    <h1 id="炸炸炸">炸炸炸</h1>
+<ul>
+<li>
+<a href="#"><img src="images/劈腿茄子.jpg"/></a>
+<span>劈腿茄子</span>
+</li>
+<li>
+<a href="#"><img src="images/炸串.jpg"/></a>
+<span>炸串</span>
+</li>
+<li>
+<a href="#"><img src="images//炸鸡.jpg"/></a>
+<span>炸鸡</span>
+<li>
+<a href="#"><img src="images/烤酸奶.jpg"/></a>
+<span>烤酸奶</span>
+</ul>
+</div>
+<br><br>
+<div class="topic1">
+    <h1 id="生日蛋糕">生日蛋糕</h1>
+<ul>
+<li>
+<a href="#"><img src="images/蛋糕1.jpg"/></a>
+<span>1</span>
+</li>
+<li>
+<a href="#"><img src="images/蛋糕2.jpg"/></a>
+<span>2</span>
+</li>
+<li>
+<a href="#"><img src="images/蛋糕3.jpg"/></a>
+<span>3</span>
+<li>
+<a href="#"><img src="images/蛋糕4.jpg"/></a>
+<span>4</span>
+</ul>
+</div>
+<br><br>
+<div class="topic1">
+    <h1 id="来点喝的！">来点喝的！</h1>
+<ul>
+<li>
+<a href="#"><img src="images/自制柠檬水.jpg"/></a>
+<span>自制柠檬水</span>
+</li>
+<li>
+<a href="#"><img src="images/奈雪的茶.jpg"/></a>
+<span>奈雪的茶</span>
+</li>
+<li>
+<a href="#"><img src="images/茶颜悦色.jpg"/></a>
+<span>茶颜悦色</span>
+<li>
+<a href="#"><img src="images/酸奶.jpg"/></a>
+<span>酸奶</span>
+</ul>
+</div>                
+    </section>
+    
+</body>
+</html>
