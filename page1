@@ -1,1 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习与思考</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+		
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body style="background-image: url(images/背景图.jpg); background-repeat:no-repeat;background-size: 100% 100%">
+    
 
+    <nav id="nav" class="nav-wrap">
+        <ul class="clearfix">
+            <li style="background:#6e938f;">
+                <a href="page1.html">
+                    学习与思考
+                </a>
+            </li>
+    
+            <li >
+                <a href="page2.html">
+                    碎碎念
+                </a>
+            </li>
+    
+            <li>
+                <a href="page3.html">
+                    一些小美好
+                </a>
+            </li>
+    
+            <li >
+                <a href="page4.html">
+                    美食分享
+                </a>
+            </li>
+            <li>
+                <a href="page5.html">
+                    嘿！
+                </a>
+            </li>
+    
+            <li id="navEnd">
+                <a href="page6.html">
+                    喜欢的音乐
+                </a>
+            </li>
+            
+            <li id="navEnd" >
+                <a href="page7.html">
+                    留言板
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <section class="container-content">
+        <div class="right-fun">
+            <div class="model">
+                <div class="title">快速跳转</div>
+                <div class="content">
+                    <div class="bar7">
+                        <a href="1one.html">操作系统</a>
+                        <br>
+                        <a href="1two.html">编译原理</a>
+                        <br>
+                        <a href="1three.html">数学建模相关</a>
+                        <br>
+                        <a href="1four.html">如何提高编程能力</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="article-list">
+            <div class="item">
+                <div class="art-img">
+                    <img src="images/操作系统.jpg" />
+                </div>
+                <div class="title">
+                    <a href="1one.html">操作系统</a>
+                </div>
+                
+                <div class="desc">
+                    分享一些学习操作系统课程时的一些感悟，虽然可能学的还比较浅~如果有表述不正确的地方，欢迎指正！谢啦!!☆⌒(*＾-゜)v
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="article-list">
+            <div class="item">
+                <div class="art-img">
+                    <img src="images/编译原理.jpg" />
+                </div>
+                <div class="title">
+                    <a href="1two.html">编译原理</a>
+                </div>
+                
+                <div class="desc">
+                    个人觉得编译原理真的好难懂！所以这里大概是分享一下学习编译原理时的艰辛历程ε(┬┬﹏┬┬)3
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-list">
+            <div class="item">
+                <div class="art-img">
+                    <img src="images/数学建模.jpg" />
+                </div>
+                <div class="title">
+                    <a href="1three.html">数学建模相关</a>
+                </div>
+                
+                <div class="desc">
+                    当初为了参加数学建模竞赛自学了一些python和Matlab的使用，还有一些相关算法，虽然建模不是主要任务，但是了解了算法和建模原理才能用代码完美地实现不是~
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-list">
+            <div class="item">
+                <div class="art-img">
+                    <img src="images/编程.jpg" />
+                </div>
+                <div class="title">
+                    <a href="1four.html">如何提高编程能力</a>
+                </div>
+                
+                <div class="desc">
+                    大一大二时在网上逛啊逛，看了很多别人的经验帖，积累了一点点小经验，不过后来没有一直坚持下去就是了😥
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+</body>
+</html>
