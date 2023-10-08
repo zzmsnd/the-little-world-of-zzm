@@ -1,3 +1,79 @@
-<p>Hello 大家好</p>
-<p>这是我的个人网站。 </p>
-<p>很高兴你来到这里</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个小世界</title>
+    <link rel="stylesheet" href="一些设计.css" type="text/css">
+</head>
+
+<style type="text/css">
+    
+	img{
+		border-radius: 50%;
+		overflow: hidden;
+		width: 150px;
+	}
+</style>
+<script type="text/javascript">
+    var c=0;
+        var t;
+        function timedCount(){
+            document.getElementById('txt').value=c;
+            c=c+1;
+            t=setTimeout("timedCount()",1000);
+        }
+        function stopCount(){
+            clearTimeout(t);
+        }
+        function clock(){
+            nowtime=new Date();
+            with(nowtime){
+                mytimer.innerText="现在时间："+nowtime.getHours()+"时"+nowtime.getMinutes()+"分"+nowtime.getSeconds()+"秒";
+                if(nowtime.getHours()>=0 && nowtime.getHours()<=12)
+                mytimer.style.color="red";
+                else
+                mytimer.style.color="black";
+            }
+        }
+
+        text="我的小世界";
+        color1="pink";
+        color2="white";
+        fontsize="8";
+        speed=1000;
+        i=0;
+        abc=18;
+        document.write("<div id=a></div>");
+
+        function changeCharColor(){
+            if(navigator.appName!="Microsoft Internet Explorer"){
+                str="<center><font face=Comic Sans MS size="+fontsize+"><font color="+color1+">";
+                    for(var j=0;j<text.length;j++){
+                        if(j==i) str+="<font face=arial size="+abc+" color="+color2+">"+text.charAt(i)+"</font>";
+                        else str+=text.charAt(j);
+                    }
+                    str+="</font></font></center>";
+                    a.innerHTML=str;
+            
+            (i==text.length)? i=0:i++;
+            } 
+        }
+        
+ 
+ 
+  
+ 
+</script>
+<body  onload="setInterval('clock()',1000);setInterval('changeCharColor()',speed);" background="images/首页背景图.jpg">
+    
+
+    <p id="mytimer" align="center"></p>
+    <img src="images/头像.jpg" align="center" alt="头像" width="15%"; height="30%" hspace="530dp" vspace="50dp" align="对齐方式"></circleimg>
+    <br>
+    <font size="5" face="宋体"><div align="center">嗨~欢迎来到我的小世界~</div></font>
+    <br>
+    <a href="菜单页.html"><div align="center">点击进入~</div></a>
+    
+</body>
+</html>
