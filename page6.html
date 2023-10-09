@@ -1,1 +1,133 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喜欢的音乐</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+        var arr=[
+            'images/音乐背景2.jpg',
+            'images/音乐背景1.jpg',
+            'images/嘿！背景3.jpg',
+            'images/嘿！背景4.jpg'
+
+        ]
+        var i=0;
+        function nextpicture(){
+            i++;
+            var a=document.getElementById("a");
+            a.src=arr[i%3];
+        }
+    </script>
+</head>
+<body style="background-image: url(images/音乐背景5.jpg); background-repeat:no-repeat;background-size: 100% 100%;">
+    <nav id="nav" class="nav-wrap">
+        <ul class="clearfix">
+            <li >
+                <a href="page1.html">
+                    学习与思考
+                </a>
+            </li>
+    
+            <li >
+                <a href="page2.html">
+                    碎碎念
+                </a>
+            </li>
+    
+            <li>
+                <a href="page3.html">
+                    一些小美好
+                </a>
+            </li>
+    
+            <li >
+                <a href="page4.html">
+                    美食分享
+                </a>
+            </li>
+            <li>
+                <a href="page5.html">
+                    嘿！
+                </a>
+            </li>
+    
+            <li id="navEnd" style="background:#6e938f;">
+                <a href="page6.html">
+                    喜欢的音乐
+                </a>
+            </li>
+            
+            <li id="navEnd" >
+                <a href="page7.html">
+                    留言板
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <section class="container-content">
+        <img  id='a' src="images/音乐背景2.jpg" width="100%" height="300dp" onclick="nextpicture()">
+        <font color="red" size="20"><b>主打音乐</b></font>
+        <br>
+        <div class="right-fun1"><embed id="1" src="video/粉色海洋1.mp4" autostart="false"  width="470dp" height="400dp" ></div>
+        <embed  id="2"src="video/粉色海洋1.mp4" autostart="false" width=470dp height="400dp" >
+        <br><br><br>
+        <font color="#ce6973" size="10"><b>精选</b></font>
+        <br>
+        <div class="right-fun">
+            <div class="model">
+                <div class="title">我的歌单</div>
+                <div class="content">
+                    <div class="bar7">
+                        <a href="#1"><font color="white">想去海边</font></a>
+                        <br>
+                        <br>
+                        <a href="#2"><font color="white">让酒</font></a>
+                        <br>
+                        <br>
+                        <a href="#3"><font color="white">嘉宾</font></a>
+                        <br>
+                        <br>
+                        <a href="#4"><font color="white">女儿国</font></a>
+                        <br>
+                        <br>
+                        <a href="#5"><font color="white">星河叹</font></a>
+                        <br>
+                        <br>
+                        <a href="#6"><font color="white">烟花易冷</font></a>
+                        <br>
+                        <br>
+                        <a href="#7"><font color="white">粉色海洋</font></a>
+                        <br>
+                        <br>
+                        <a href="#8"><font color="white">说好不哭</font></a>
+                        <br>
+                        <br>
+                        <a href="#9"><font color="white">那个夏天</font></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+         <embed id="3" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+            <embed id="4" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                <br><br>
+            <embed id="5" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                <embed id="6" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                    <br><br>
+                    <embed id="7" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                        <embed id="8" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                            <embed id="9" src="video/粉色海洋1.mp4" autostart="false"  width="300dp" height="200dp">
+                                
+    </section>
+    
+</body>
+</html>
