@@ -1,1 +1,115 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+       
+        
+    </script>
+</head>
+<body style="background-image: url(images/留言背景图5.jpg); background-repeat:no-repeat;background-size: 100%;">
+    
+
+    <nav id="nav" class="nav-wrap">
+        <ul class="clearfix">
+            <li >
+                <a href="page1.html">
+                    学习与思考
+                </a>
+            </li>
+    
+            <li >
+                <a href="page2.html">
+                    碎碎念
+                </a>
+            </li>
+    
+            <li>
+                <a href="page3.html">
+                    一些小美好
+                </a>
+            </li>
+    
+            <li >
+                <a href="page4.html">
+                    美食分享
+                </a>
+            </li>
+            <li>
+                <a href="page5.html">
+                    嘿！
+                </a>
+            </li>
+    
+            <li id="navEnd">
+                <a href="page6.html">
+                    喜欢的音乐
+                </a>
+            </li>
+            
+            <li id="navEnd" style="background:#6e938f;">
+                <a href="page7.html">
+                    留言板
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <section class="container-content">
+        
+        <br><br><br>
+        <div align="center">
+    <textarea></textarea>
+    <button>发布</button>
+</div>
+<br>
+    <ul1>
+        <li>
+            <font color="white" size="5">欢迎来到我的小世界~欢迎留言！</font><aa href="javascript:;">删除</aa>
+        </li>
+    </ul1>
+    
+    </section>
+    
+</body>
+<script>
+    //1、获取元素
+    var txt = document.querySelector("textarea");
+    var btn = document.querySelector("button");
+    var ul1 = document.querySelector("ul1");
+    var i=0;
+    //2、给button绑定点击事件
+    btn.onclick = function () {
+        if (txt.value == "") {//当文本框中没有文字时，提示
+            alert("您没有输入内容")
+        } else {
+            i++;
+            //创建元素li作为留言区
+            var li = document.createElement("li");
+            //将文本框中的内容放到li中,a标签中href中的内容代表什么都不执行
+            li.innerHTML = "<font color='white' size='5'>"+txt.value + "</font>"+"<aa href='javascript:;'>删除</aa>"
+            txt.value = "";//添加之后文本框的内容清空
+            //将留言添加到ul中，而且在最上方
+            
+            ul1.insertBefore(li, ul1.children[i]);
+            //当点击删除时删除ul中的li
+            var as = document.querySelectorAll("aa");
+            //循环给每个删除绑定事件
+            for (var i = 0; i < as.length; i++) {
+                as[i].onclick = function () {
+                    //删除当前a标签所在位置的父节点li
+                    ul1.removeChild(this.parentNode);
+                }
+            }
+        }
+    }
+</script>
+
+</html>
