@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作系统</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script language="JavaScript">
+        var arr=[
+            '图片/操作系统.jpg',
+            '图片/第二章：进程的描述与控制.png',
+            '图片/第三章：处理机调度与死锁_00.png',
+        ];
+        var arr2=[
+            '第一章 操作系统引论',
+            '第二章 进程的描述与控制',
+            '第三章 处理机调度与死锁',
+        ];
+        var arr3=[
+            '操作系统第一章图.html',
+            '操作系统第二张图.html',
+            '操作系统第三张图.html',
+
+        ];
+        var i=0;
+        function nextpicture(){
+            i++;
+            var imgBg=document.getElementById("imgBg");
+            imgBg.src=arr[i%3];
+            var biaoti=document.getElementById("biaoti");
+            biaoti.innerHTML=arr2[i%3];
+            var fangda=document.getElementById("fangda");
+            fangda.href=arr3[i%3];
+        }
+    </script>
+</head>
+<body style="background-image: url(图片/背景图.jpg); background-repeat:no-repeat;background-size: 100% 120%">
+    <H2 align="center">操作系统</H2>
+    <br>
+    <hr align="left" size=3 width="100%" color="pink" noshade>
+    
+    <div style="float: left;" >
+        &nbsp&nbsp刚开始上操作系统这门课程时，
+        <br>
+        <br>
+        &nbsp&nbsp老师就跟我们说要会画思维导图，
+        <br>
+        <br>
+        &nbsp&nbsp而且不是手画噢~
+        <br>
+        <br>
+        &nbsp&nbsp是用电脑绘制
+        <br>
+        <br>
+        &nbsp&nbsp于是乎~这门课就画了很多很多思维导图
+        <br>
+        <br>
+        &nbsp&nbsp刚开始没觉得什么，就是每次作业都多了一项
+        <br>
+        <br>
+        &nbsp&nbsp然后发现，诶？
+        <br>
+        <br>
+        &nbsp&nbsp好像真的有点用噢!
+        <br>
+        <br>
+        &nbsp&nbsp不仅仅是复习了每个章节的知识
+        <br>
+        <br>
+        &nbsp&nbsp它也让我养成了更好的思维习惯，更有条理和逻辑性
+        <br>
+        <br>
+        &nbsp&nbsp在后来的学习中，
+        <br>
+        <br>
+        &nbsp&nbsp我也好好利用了这项技能，
+        <br>
+        <br>
+        &nbsp&nbsp每当学习新东西时，我都会用思维导图把各个知识点连接起来
+        <br>
+        <br>
+        &nbsp&nbsp让知识在我的脑海中有一个更深刻形象的记忆
+    </div>
+    <div align="center"><p id="biaoti">第一章 操作系统引论</p></div>
+    <div >
+        <a id="fangda" href="操作系统第一章图.html"><img id="imgBg" src="图片/操作系统.jpg" width="65%"></a>
+    </div>
+    <input type="button" value="下一张"  onclick="nextpicture()">
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学建模相关</title>
+    <link rel="shortcut icon" href="" />
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <script>
+        var arr=[
+          '图片/数学建模1.jpg',
+          '图片/数学建模2.jpg',
+          '图片/数学建模3.jpg',
+        ]
+        var i=0;
+        function nextpicture(){
+            i++;
+            var imgBg=document.getElementById("imgBg");
+            imgBg.src=arr[i%3];
+            
+        }
+      </script>
+      
+</head>
+<body style="background-image: url(图片/背景图.jpg); background-repeat:no-repeat;background-size: 100% 120%">
+    <H2 align="center">数学建模相关</H2>
+    <br>
+    <hr align="left" size=3 width="100%" color="pink" noshade>
+    <div style="float: left;" >
+        &nbsp&nbsp学习数学建模的时候，嗯，让我想想
+        <br>
+        <br>
+        &nbsp&nbsp其实认真说起来
+        <br>
+        <br>
+        &nbsp&nbsp自己好像没有真正实现过一个比较难的算法
+        <br>
+        <br>
+        &nbsp&nbsp都是在别人的代码里删删改改
+        <br>
+        <br>
+        &nbsp&nbsp但是全抄也不可能 根本就跑不动
+        <br>
+        <br>
+        &nbsp&nbsp每次都要把代码从头到尾研究一遍
+        <br>
+        <br>
+        &nbsp&nbsp看看每一步到底是干嘛的 然后才能加以利用
+        <br>
+        <br>
+        &nbsp&nbsp所以比赛的时候真的觉得好累哇~脑袋都要想爆了
+        <br>
+        <br>
+        &nbsp&nbsp说说收获了什么吧
+        <br>
+        <br>
+        &nbsp&nbsp第一次就是做到了几天时间里其他什么也不干
+        <br>
+        <br>
+        &nbsp&nbsp除了吃饭睡觉 专心地就坐在同一个地方面对电脑敲敲打打
+        <br>
+        <br>
+        &nbsp&nbsp收获了一份专注认真和拼劲吧
+        <br>
+        <br>
+        &nbsp&nbsp还有就是又一项新的技能和一段难忘的经历~
+        <br>
+        <br>
+        &nbsp&nbsp虽然过程很累，但是完成之后内心的骄傲是前所未有的呀~
+        <br>
+        <br>
+    </div>
+    
+    <div  style="float:left">
+      <img id="imgBg" src="图片/数学建模1.jpg" width="100%">
+    </div>
+    <input type="button" class="next" value="下一页" onclick="nextpicture()">
+
+     
+    
+    
+
+</body>
+</html>
